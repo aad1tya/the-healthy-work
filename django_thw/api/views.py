@@ -5,6 +5,8 @@ from django.http import JsonResponse
 
 def getRoutes(request):
     
+    
+    #These are API endpoints
     routes = [
         {
             'Endpoint': '/cards/',
