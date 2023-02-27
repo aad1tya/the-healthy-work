@@ -36,6 +36,6 @@ def getCards(request):
 
 @api_view(['GET'])
 def getCard(request, pk):
-    cards = Card.objects.get(id=pk)
-    serializer = CardSerializer(cards, many=False)
+    card = Card.objects.get(id=pk)
+    serializer = CardSerializer(card, many=False)
     return Response(serializer.data)

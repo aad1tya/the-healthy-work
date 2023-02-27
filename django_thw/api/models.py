@@ -11,3 +11,6 @@ class Card(models.Model):
     def __str__(self):
         return "Card " + str(self.id) + ": "+ self.heading[0:50]
     
+    class Meta:
+        ordering = ['created']
+    
